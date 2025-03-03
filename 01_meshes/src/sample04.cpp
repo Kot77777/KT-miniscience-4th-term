@@ -64,7 +64,7 @@ int main(int argc, char **argv)
   gmsh::model::geo::synchronize();
 
   // We specify element sizes imposed by a size field, just because we can :-)
-  bool funny = true; // false;
+  bool funny = false; // false;
   int f = gmsh::model::mesh::field::add("MathEval");
   if(funny)
     gmsh::model::mesh::field::setString(f, "F", "2*sin((x+y)/5) + 3");
