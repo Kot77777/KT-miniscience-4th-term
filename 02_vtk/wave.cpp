@@ -126,7 +126,7 @@ public:
         structuredGrid->GetPointData()->AddArray(smth);
 
         // Создаём снапшот в файле с заданным именем
-        string fileName = "cubic2d-step-" + std::to_string(snap_number) + ".vts";
+        string fileName = "wave-step-" + std::to_string(snap_number) + ".vts";
         vtkSmartPointer<vtkXMLStructuredGridWriter> writer = vtkSmartPointer<vtkXMLStructuredGridWriter>::New();
         writer->SetFileName(fileName.c_str());
         writer->SetInputData(structuredGrid);
